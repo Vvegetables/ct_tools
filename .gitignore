@@ -1,0 +1,6 @@
+*.pyc
+**/__pychache__
+/.metadata/
+.project
+.pydevproject
+
