@@ -9,7 +9,15 @@ __all__ = ['ProcessOptions']
 class ProcessOptions(MiddlewareMixin):
     def process_request(self, request):
         if request.method == "OPTIONS":
-            return HttpResponse()
+            response = HttpResponse()
+            try:
+                response["Access-Control-Allow-Origin"] = request.META.get("HTTP_ORIGIN")
+            except:
+                response["Access-Control-Allow-Origin"] = "*"
+            response["Access-Control-Allow-Methods"] = "POST, GET, OPTIONS" 
+            response["Access-Control-Max-Age"] = 1000 
+            response["Access-Control-Allow-Headers"] = "*" 
+            return response
     def process_exception(self, request:HttpRequest, exception):
         pass
 

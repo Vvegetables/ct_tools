@@ -10,7 +10,6 @@ ct_tools/django_utils/__init__.py
 ct_tools/django_utils/exception/__init__.py
 ct_tools/django_utils/exception/capture_exception.py
 ct_tools/django_utils/logger/__init__.py
-ct_tools/django_utils/logger/errorlogger.py
 ct_tools/django_utils/logger/test.py
 ct_tools/django_utils/middlewares/__init__.py
 ct_tools/django_utils/middlewares/corsmiddleware.py
@@ -19,6 +18,10 @@ ct_tools/django_utils/middlewares/localmiddleware.py
 ct_tools/django_utils/models/DjangoBaseModel.py
 ct_tools/django_utils/models/__init__.py
 ct_tools/django_utils/responses/__init__.py
+ct_tools/django_utils/utils/__init__.py
+ct_tools/django_utils/utils/number_tools.py
+ct_tools/django_utils/utils/login_tools/__init__.py
+ct_tools/django_utils/utils/login_tools/_login_required.py
 ct_tools/django_utils/views/__init__.py
 ct_tools/django_utils/views/httpbaseview1.py
 ct_tools/django_utils/views/test.py

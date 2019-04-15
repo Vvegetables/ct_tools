@@ -1,4 +1,4 @@
-from ....responses import ct_response
+from ct_tools.django_utils.responses import ct_response
 def _login_required(func):
     @wraps(func)
     def wrapper(request, *args, **kwargs):

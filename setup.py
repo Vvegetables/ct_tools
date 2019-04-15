@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 
 setup(
 	name = "ct_tools",
-	version = "0.0.7",
+	version = "0.1.4",
 	description = "ct tools",
 	author = "Vvegetables",
 	author_email = "hardwork_fight@163.com",
@@ -20,6 +20,6 @@ setup(
 		"Programming Language :: Python :: 3",
 		"Operating System :: OS Independent",
 	],
-	include_package_data=True,    # 启用清单文件MANIFEST.in
-	exclude_package_date={'':['.gitignore']} #去除部分不想要的文件
+	include_package_data=True,    
+	exclude_package_date={'':['.gitignore']}
 )
