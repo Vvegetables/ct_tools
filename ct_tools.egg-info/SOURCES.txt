@@ -24,6 +24,7 @@ ct_tools/django_utils/utils/login_tools/__init__.py
 ct_tools/django_utils/utils/login_tools/_login_required.py
 ct_tools/django_utils/views/__init__.py
 ct_tools/django_utils/views/httpbaseview1.py
+ct_tools/django_utils/views/httpbaseview2.py
 ct_tools/django_utils/views/test.py
 ct_tools/mysqldb/PyMysqlClient.py
 ct_tools/mysqldb/__init__.py
