@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 
 setup(
 	name = "ct_tools",
-	version = "0.1.6",
+	version = "0.3.1",
 	description = "ct tools",
 	author = "Vvegetables",
 	author_email = "hardwork_fight@163.com",

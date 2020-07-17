@@ -9,11 +9,11 @@ LOGGER_FORMAT = logging.Formatter(
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
-file_logger = logging.FileHandler("error.log")
+file_logger = logging.FileHandler("logging_error.log", encoding="utf-8")
 file_logger.setLevel(logging.ERROR)
 file_logger.setFormatter(LOGGER_FORMAT)
  
-file_logger2 = logging.FileHandler("debug.log")
+file_logger2 = logging.FileHandler("logging_debug.log", encoding="utf-8")
 file_logger2.setLevel(logging.DEBUG)
 file_logger2.setFormatter(LOGGER_FORMAT)
 

@@ -10,8 +10,11 @@ def ct_response(content: dict, state=0, content_type="application/json"):
         "data" : content,
         "state" : state
     }
-    response = HttpResponse(json.dumps(data), content_type=content_type)
-    return response
+    if content_type == "application/json":
+        response = HttpResponse(json.dumps(data), content_type=content_type)
+        return response
+    else:
+        return
 
 def response_to_file(file, filename):
     filename = escape_uri_path(filename)
