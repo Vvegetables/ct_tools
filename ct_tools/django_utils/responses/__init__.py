@@ -2,10 +2,15 @@ from django.http import HttpResponse
 from django.utils.encoding import escape_uri_path
 import json
 
-def ct_response(content: dict, state=0, content_type="application/json"):
-    '''
-    @param state : 0-success;1-error;2-login-error
-    '''
+from typing import Any
+
+
+def ct_response(content: Any, state=0, content_type="application/json"):
+    """
+    :content
+    :state 0-success;1-error;2-login-error
+    :content_type
+    """
     data = {
         "data" : content,
         "state" : state
