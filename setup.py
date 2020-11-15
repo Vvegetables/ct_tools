@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 
 setup(
 	name = "ct_tools",
-	version = "0.3.1",
+	version = "0.4.1",
 	description = "ct tools",
 	author = "Vvegetables",
 	author_email = "hardwork_fight@163.com",
@@ -13,6 +13,7 @@ setup(
 	install_requires = [
 		"Django >= 1.11.0, < 2.0",
 		"PyMysql >= 0.9.2",
+		"openpyxl"
 	],
 	classifiers = [
 		"Development Status :: 2 - Pre-Alpha",
