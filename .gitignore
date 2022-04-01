@@ -7,3 +7,5 @@
 /build
 .settings
 *.egg-info
+venv
+.idea

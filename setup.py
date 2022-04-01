@@ -2,12 +2,12 @@ from setuptools import setup,find_packages
 
 setup(
 	name = "ct_tools",
-	version = "0.3.1",
+	version = "0.5.2",
 	description = "ct tools",
 	author = "Vvegetables",
 	author_email = "hardwork_fight@163.com",
 	license = "Public domain",
-	url = "https://github.com/Vvegetables/ct_tools",
+	url = "https://github.com/Vvegetables/ct_tools.git",
 	packages = find_packages(),
 	platforms = ["all"],
 	install_requires = [

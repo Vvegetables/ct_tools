@@ -23,7 +23,7 @@ def exclude(func):
     return wrapper
 
 
-def add_method(key: str, value: typing.Any, container: typing.Iterable):
+def add_method(key: str, value: typing.Any, container: typing.List):
     # staticmethod classmethod
     if (isinstance(value, (FunctionType, ))
             and not key.startswith("_")
@@ -33,7 +33,7 @@ def add_method(key: str, value: typing.Any, container: typing.Iterable):
         container.append(key)
 
 
-def extend_method(method_list: typing.List[str], container: typing.Iterable):
+def extend_method(method_list: typing.List[str], container: typing.List):
     for m in method_list:
         if m not in container:
             container.append(m)
