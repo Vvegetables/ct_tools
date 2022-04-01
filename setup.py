@@ -13,6 +13,7 @@ setup(
 	install_requires = [
 		"Django >= 1.11.0, < 2.0",
 		"PyMysql >= 0.9.2",
+		"openpyxl"
 	],
 	classifiers = [
 		"Development Status :: 2 - Pre-Alpha",
